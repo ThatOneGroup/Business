@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE! html>
  <html>
   <head>
    <title>LPNeil @ TOGU</title>
@@ -19,7 +19,7 @@
   </head>
   <body>
    <nav class="navbar navbar-default navbar-fixed-top">
-    <img id="mainImg" src="BenchLookCrop.jpg">
+    <img id="mainImg" src="BenchLookCrop.jpg"></img>
     <div class="container-fluid">
      <div class="navbar-header" itemscope itemtype="http://www.thatonegroup.us/micro/name">
       <a class="navbar-brand" href="http://www.thatonegroup.us/martist/LPNeil/" itemprop="url"><font color="#ffaa00">LPNeil</font></a>
@@ -36,13 +36,32 @@
    <div id="divBody"></div>
    <script type="text/javascript">
     var dBody = document.getElementById("divBody");
+    var ab1P1 = "<div class='container'>";
+    var ab1P2 = "<ul class='nav nav-pills'>";
+    var ab1P3a = "<li><a href='javascript:aDat(1,1);'>SoundCloud</a></li>";var ab1P3b = "<li><a href='javascript:aDat(1,2);'>YouTube</a></li>";
+    var ab1P3 = ab1P3a + ab1P3b;
+    var ab1P4 = "</ul>";
+    var ab1P5 = "<iframe id='ab1Frame'></iframe>";
+    var ab1P6 = "</div>";
+    var ab1 = ab1P1 + ab1P2 + ab1P3 + ab1P4 + ab1P5 +ab1P6;
     function album(ver){
      if(ver==1){
       show1();
      }
     }
     function show1(){
-     alert("I work!");
+     dBody.innerHTML = ab1;
+    }
+    function aDat(ver, op){
+     if(ver==1){
+      if(op==1){
+       document.getElementById("ab1Frame").src = "https://soundcloud.com/user-273680655";
+      }else{
+       if(op==2){
+        alert("IFrame should load channel playlist");
+       }
+      }
+     }
     }
    </script>
   </body>
