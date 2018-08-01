@@ -23,7 +23,7 @@
      <ul class="nav navbar-nav">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums<span class="caret"></span></a>
        <ul class="dropdown-menu">
-        <li itemscope itemtype="http://www.thatonegroup.us/micro/menuItem"><a href="javascript:album(1);">JustOne</a></li>
+        <li itemscope itemtype="http://www.thatonegroup.us/micro/menuItem"><a class="album1">JustOne</a></li>
        </ul>
       </li>
      </ul>
@@ -42,7 +42,10 @@
    </div>
    <script>
     $(document).ready(function(){
-     $(.albumBody1).hide();
+     $(".albumBody1").hide();
+     $(".album1").click(function(){
+      $".albumBody1").show();
+     });
     });
    </script>
   </body>
