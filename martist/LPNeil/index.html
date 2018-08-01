@@ -12,9 +12,38 @@
      heigh: 3.5%;
      width: 100%;
     }
+    #divBody{
+     margin-top:10px;
+    }
    </style>
   </head>
   <body>
-   <img id="mainImg" src="BenchLookCrop.jpg"></img>
+   <nav class="navbar navbar-default navbar-fixed-top">
+    <img id="mainImg" src="BenchLookCrop.jpg"></img>
+    <div class="container-fluid">
+     <div class="navbar-header" itemscope itemtype="http://www.thatonegroup.us/micro/name">
+      <a class="navbar-brand" href="http://www.thatonegroup.us/martist/LPNeil/" itemprop="url"><font color="#ffaa00">LPNeil</font></a>
+     </div>
+     <ul class="nav navbar-nav">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+        <li itemscope itemtype="http://www.thatonegroup.us/micro/menuItem"><a href="javascript:album(1);">JustOne</li>
+       </ul>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div id="divBody"></div>
+   <script type="text/javascript">
+    var dBody = document.getElementById("divBody");
+    function album(ver){
+     if(ver==1){
+      show1();
+     }
+    }
+    function show1(){
+     alert("I work!");
+    }
+   </script>
   </body>
  </html>
