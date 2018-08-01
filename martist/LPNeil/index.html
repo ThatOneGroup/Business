@@ -16,11 +16,12 @@
      margin-top:10px;
     }
     ul#ab li{ display:inline; }
+    div#albumBody1{ width:0px;height:0px;
    </style>
   </head>
   <body>
    <nav class="navbar navbar-default navbar-fixed-top">
-    <img id="mainImg" src="BenchLookCrop.jpg"></img>
+    <img id="mainImg" src="BenchLookCrop.jpg">
     <div class="container-fluid">
      <div class="navbar-header" itemscope itemtype="http://www.thatonegroup.us/micro/name">
       <a class="navbar-brand" href="http://www.thatonegroup.us/martist/LPNeil/" itemprop="url"><font color="#ffaa00">LPNeil</font></a>
@@ -28,38 +29,26 @@
      <ul class="nav navbar-nav">
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Albums<span class="caret"></span></a>
        <ul class="dropdown-menu">
-        <li itemscope itemtype="http://www.thatonegroup.us/micro/menuItem"><a href="javascript:album(1);">JustOne</li>
+        <li itemscope itemtype="http://www.thatonegroup.us/micro/menuItem"><a href="javascript:album(1);">JustOne</a></li>
        </ul>
       </li>
      </ul>
     </div>
    </nav>
-   <div id="divBody"></div>
+   <div id="albumBody1">
+    <ul class="nav nav-pills">
+     <li><a href="javascript:abDat(1,1)">SoundCloud</a></li>
+     <li><a href="javascript:abDat(1,2)">YouTube</a></li>
+    </ul>
+    <div class="container">
+     
+    </div>
+   </div>
    <script type="text/javascript">
-    var dBody = document.getElementById("divBody");
-    var ab1P1 = "<div class='container'>";
-    var ab1P2 = "<ul class='nav nav-pills'>";
-    var ab1P3a = "<li><a href='javascript:aDat(1,1);'>SoundCloud</a></li>";var ab1P3b = "<li><a href='javascript:aDat(1,2);'>YouTube</a></li>";
-    var ab1P4 = "</ul>";
-    var ab1P5 = "<div id='abBody'></div>";
-    var ab1P6 = "</div>";
+    var ab1 = document.getElementById("albumBody1");
     function album(ver){
      if(ver==1){
-      show1();
-     }
-    }
-    function show1(){
-     document.getElementById("divBody").innerHTML = ab1P1+ab1P2+ab1P3a+ab1P3b+ab1P4+ab1P5+ab1P6;
-    }
-    function aDat(ver, op){
-     if(ver==1){
-      if(op==1){
-       document.getElementById("ab1Frame").src = "https://soundcloud.com/user-273680655";
-      }else{
-       if(op==2){
-        alert("IFrame should load channel playlist");
-       }
-      }
+      ab1.style.width = "auto";ab1.style.height = "auto";
      }
     }
    </script>
