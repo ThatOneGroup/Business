@@ -30,7 +30,7 @@
     </div>
    </nav>
    <div id="divBody">
-    <div id="albumBody1">
+    <div class="albumBody1">
      <ul class="nav nav-pills">
       <li><a href="javascript:abDat(1,1)">SoundCloud</a></li>
       <li><a href="javascript:abDat(1,2)">YouTube</a></li>
@@ -40,5 +40,10 @@
      </div>
     </div>
    </div>
+   <script>
+    $(document).ready(function(){
+     $(.albumBody1).hide();
+    });
+   </script>
   </body>
  </html>
