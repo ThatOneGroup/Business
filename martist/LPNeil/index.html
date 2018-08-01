@@ -15,6 +15,7 @@
     #divBody{
      margin-top:10px;
     }
+    ul#ab li{ display:inline; }
    </style>
   </head>
   <body>
@@ -40,7 +41,7 @@
     var ab1P2 = "<ul class='nav nav-pills'>";
     var ab1P3a = "<li><a href='javascript:aDat(1,1);'>SoundCloud</a></li>";var ab1P3b = "<li><a href='javascript:aDat(1,2);'>YouTube</a></li>";
     var ab1P4 = "</ul>";
-    var ab1P5 = "<iframe id='ab1Frame'></iframe>";
+    var ab1P5 = "<div id='abBody'></div>";
     var ab1P6 = "</div>";
     function album(ver){
      if(ver==1){
@@ -48,7 +49,7 @@
      }
     }
     function show1(){
-     dBody.innerHTML = ab1P1+ab1P2+ab1P3a+ab1P3b+ab1P4+ab1P5+ab1P6;
+     document.getElementById("divBody").innerHTML = ab1P1+ab1P2+ab1P3a+ab1P3b+ab1P4+ab1P5+ab1P6;
     }
     function aDat(ver, op){
      if(ver==1){
