@@ -10,6 +10,14 @@
    <style>
     div#divBody{ margin-top:5%; }
    </style>
+   <script>
+    $(document).ready(function(){
+     $(".aboutPage").hide();
+     $(".about").click(function(){
+      $(".aboutPage").show();
+     });
+    });
+   </script>
   </head>
   <body>
    <nav class="navbar navbar-default navbar-fixed-top">
@@ -27,7 +35,13 @@
     </div>
    </nav>
    <div id="divBody">
-    <p>Hello</p>
+    <ul class="nav nav-pills">
+     <li><a class="about">About</a></li>
+    </ul>
+    <div class="aboutPage">
+     <div align="center">
+     </div>
+    </div>
    </div>
   </body>
  </html>
