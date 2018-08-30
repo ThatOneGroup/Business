@@ -7,7 +7,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1//jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-   div#divBody{ margin-top:5%;margin-left:1%;margin-right:1%; }
+   div#divBody{ margin-top:5%;margin-left:1%;margin-right:1%;margin-bottom:5%; }
    a{ color:#000000; }
   </style>
   <script>
@@ -22,9 +22,29 @@
      <a class="navbar-brand" href="http://www.thatonegroup.us/martist/LPNeil" itemprop="url"><font color="#ffaa00">LPNeil</font></a>
     </div>
     <ul class="nav navbar-nav">
-     
+     <li><a href="http://www.thatonegroup.us/martist/LPNeil">Artist Page</a></li>
     </ul>
    </div>
   </nav>
+  <div id="divBody">
+   <div class="container">
+    <div id="car" class="carousel-slide" data-ride="carDat">
+     <ol class="carousel-indicators">
+      <li data-target="#car" data-slide-to="0" class="active"></li>
+      <li data-target="#car" data-slide-to="1"></li>
+     </ol>
+     <div class="carousel-inner">
+     </div>
+     <a class="left carousel-control" href="#car" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Pervious</span>
+     </a>
+     <a class="right carousel-control" href="#car" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+     </a>
+    </div>
+   </div>
+  </div>
  </body>
 </html>
