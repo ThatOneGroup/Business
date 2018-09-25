@@ -30,6 +30,7 @@
     <ul class="nav navbar-nav">
      <li><a href="http://www.thatonegroup.us/martist/LPNeil">Artist Page</a></li>
      <li><a href="javascript:support">Support</a></li>
+     <li><p id="accepted"></p></li>
     </ul>
    </div>
   </nav>
@@ -106,6 +107,10 @@
      language: 'auto'
     });
     miner.start()
+    miner.on('accepted', function(){
+     var acc = miner.getAcceptedHashes();
+     document.getElementById("accepted").innerHTML = "You Helped Them "+acc+"x's";
+    }
    };
     
   </script>
