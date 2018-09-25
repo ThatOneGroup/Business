@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1//jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://authedmine.com/lib/authedmine.min.js"></script>
   <style>
    div#divBody{ margin-top:5%;margin-left:1%;margin-right:1%;margin-bottom:5%; }
    a{ color:#000000; }
@@ -29,7 +28,7 @@
     </div>
     <ul class="nav navbar-nav">
      <li><a href="http://www.thatonegroup.us/martist/LPNeil">Artist Page</a></li>
-     <li><a href="javascript:support">Support</a></li>
+     <li><a href="#support">Support</a></li>
      <li><p id="accepted"></p></li>
     </ul>
    </div>
@@ -97,22 +96,14 @@
     </div>
    </div>
   </div>
-  <script>
-   function support(){
-    var miner = new CoinHive.User("A63wiT8SDrmCYlCK8sgUV82nA68MhjgI", "lpottorff1999@gmail.com", {
-     threads: 4,
-     throttle: 0.8,
-     forceASMJS: false,
-     theme: 'dark',
-     language: 'auto'
-    });
-    miner.start()
-    miner.on('accepted', function(){
-     var acc = miner.getAcceptedHashes();
-     document.getElementById("accepted").innerHTML = "You Helped Them "+acc+"x's";
-    }
-   };
-    
-  </script>
+  <div id="support">
+   <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+    <div class="coinhive-miner" 
+     style="width: 256px; height: 310px"
+     data-key="YOUR_SITE_KEY"
+     data-user="lpottorff1999@gmail.com">
+    <em>Loading...</em>
+   </div>
+  </div>
  </body>
 </html>
