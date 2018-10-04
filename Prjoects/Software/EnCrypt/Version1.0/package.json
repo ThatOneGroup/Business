@@ -1,0 +1,16 @@
+{
+ "name": "EnCrypt",
+ "version": "1.0.0",
+ "description: "JavaScript based encryption to use for FireBase.",
+ "private": "true",
+ "main": "encrypt.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "keyboards": ["EnCrypt","encryption"],
+ "author": "LPNeil",
+ "license": "ISC",
+ "devDependencies": {
+ },
+ "dependencies": {}
+}
