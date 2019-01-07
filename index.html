@@ -15,8 +15,16 @@
    <script>
     $(document).ready(function(){
      $(".aboutPage").hide();
+     $(".schPage").hide();
      $(".about").click(function(){
       $(".aboutPage").show();
+      $(".mainPage").hide();
+      $(".schPage").hide();
+     });
+     $(".sch").click(function(){
+      $(".schPage").show();
+      $(".aboutPage").hide();
+      $(".mainPage").hide();
      });
      $(".blogs").click(function(){
       $(".blogs").attr("href", "http://www.thatonegroup.us/blogs");
@@ -48,7 +56,10 @@
     <ul class="nav nav-pills">
      <li><a class="about">About</a></li>
      <li><a class="blogs">Blogs</a></li>
+     <li><a class="sch">Schedule</a></li>
     </ul>
+    <div class="mainPage">
+    </div>
     <div class="aboutPage">
      <div align="center">
       <h2>About ThatOneGroup</h2>
@@ -59,6 +70,8 @@
       <li><p>We started in entertainment in 2018 officialy. With our first entertainer known as LPNeil. </p></li>
       <li><p>Not only were they the first to start they are the founder of the company.</p></li>
      </ul>
+    </div>
+    <div class="schPage">
     </div>
    </div>
   </body>
